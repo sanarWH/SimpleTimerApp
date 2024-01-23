@@ -3,4 +3,5 @@
     <string name="start">Start</string>
     <string name="pause">Pause</string>
     <string name="reset">Reset</string>
+    <string name="multi_timer">Multi Timer</string>
 </resources>

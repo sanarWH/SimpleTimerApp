@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background">#393E41</color>
+    <color name="grey">#393E41</color>
+    <color name="lightGrey">#696D6C</color>
+    <color name="darkGrey">#2B2F31</color>
     <color name="colorWhite">#F6F7EB</color>
-    <color name="colorGreen">#06F666</color>
+    <color name="colorGreen">#00D354</color>
     <color name="colorBlue">#087EB5</color>
     <color name="colorRed">#E56552</color>
     <color name="colorOrange">#F6842D</color>

@@ -3,6 +3,6 @@
     <style name="Base.Theme.SimpleTimerApp" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
-        <item name="android:statusBarColor">@color/statusBar</item>
+        <item name="android:statusBarColor">@color/darkGrey</item>
     </style>
 </resources>

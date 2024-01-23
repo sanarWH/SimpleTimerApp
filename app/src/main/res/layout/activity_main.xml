@@ -7,8 +7,48 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="20dp"
-    android:background="@color/background"
+    android:background="@color/grey"
     tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/grey"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/multi_timer"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintStart_toEndOf="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/grey"
+            android:src="@drawable/ic_language"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,6 +56,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="10dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/shpae_timer_blue">
 
         <Chronometer
@@ -33,7 +74,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="10dp">
 
         <Button
             android:id="@+id/btn_start"
@@ -55,6 +96,108 @@
             android:text="@string/reset"
             android:layout_marginStart="10dp"
             android:backgroundTint="@color/colorBlue"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/shape_timer_green"
+        android:layout_marginTop="35dp">
+
+        <Chronometer
+            android:id="@+id/chronometer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorGreen"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_start2"
+            android:text="@string/start"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_pause2"
+            android:text="@string/pause"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_reset2"
+            android:text="@string/reset"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/shape_timer_orange"
+        android:layout_marginTop="35dp">
+
+        <Chronometer
+            android:id="@+id/chronometer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorOrange"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_start3"
+            android:text="@string/start"
+            android:backgroundTint="@color/colorOrange"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_pause3"
+            android:text="@string/pause"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorOrange"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_reset3"
+            android:text="@string/reset"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorOrange"
             android:textColor="@color/colorWhite"
             style="@style/ButtonStyle"/>
 

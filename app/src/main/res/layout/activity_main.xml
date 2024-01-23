@@ -4,33 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/background"
     tools:context=".MainActivity">
-    
-    <Chronometer
-        android:id="@+id/chronometer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="56sp"/>
 
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/shpae_timer_blue">
 
-    <Button
-        android:id="@+id/btn_pause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pause"/>
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="60sp" />
 
-    <Button
-        android:id="@+id/btn_reset"
-        android:layout_width="wrap_content"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/reset"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:text="@string/start"
+            android:backgroundTint="@color/colorBlue"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_pause"
+            android:text="@string/pause"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorBlue"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:text="@string/reset"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/colorBlue"
+            android:textColor="@color/colorWhite"
+            style="@style/ButtonStyle"/>
+
+    </LinearLayout>
 
 
 </LinearLayout>
